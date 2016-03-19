@@ -60,6 +60,7 @@ const getLoaders = function (env) {
   }
 
   return loaders;
+  
 };
 
 function getConfig(env) {
