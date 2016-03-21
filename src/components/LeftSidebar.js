@@ -1,5 +1,6 @@
 import React, { PropTypes } from 'react';
 import { Link } from 'react-router';
+import LeftMenuItem from './LeftMenuItem';
 
 // Since this component is simple and static, there's no parent container for it.
 const LeftSidebar = () => {
@@ -8,6 +9,10 @@ const LeftSidebar = () => {
 
       <ul className="sidebar-panel nav">
         <li className="sidetitle">MAIN</li>
+
+        <LeftMenuItem />
+
+
         <li><a href="index.html"><span className="icon color5"><i className="fa fa-home"></i></span>Dashboard<span className="label label-default">2</span></a></li>
         <li><a href="mailbox.html"><span className="icon color6"><i className="fa fa-envelope-o"></i></span>Mailbox<span className="label label-default">19</span></a></li>
         <li><a href="#"><span className="icon color7"><i className="fa fa-flask"></i></span>UI Elements<span className="caret"></span></a>

@@ -44,30 +44,32 @@ Plugin Css
 /* Bootstrap Select */
 @import url('plugin/bootstrap-toggle/bootstrap-toggle.min.css');
 
-/* Bootstrap wysihtml5 */
-@import url('plugin/bootstrap-wysihtml5/bootstrap-wysihtml5.css');
+/* Bootstrap wysihtml5
+@import url('plugin/bootstrap-wysihtml5/bootstrap-wysihtml5.css');*/
 
-/* Summernote */
+/* Summernote
 @import url('plugin/summernote/summernote.css');
-@import url('plugin/summernote/summernote-bs3.css');
+@import url('plugin/summernote/summernote-bs3.css');*/
 
-/* Sweet Alert */
-@import url('plugin/sweet-alert/sweet-alert.css');
+/* Sweet Alert
+@import url('plugin/sweet-alert/sweet-alert.css');*/
 
-/* Data Tables */
-@import url('plugin/datatables/datatables.css');
+/* Data Tables
+@import url('plugin/datatables/datatables.css'); */
 
-/* Chartist */
-@import url('plugin/chartist/chartist.min.css');
+/* Chartist
+@import url('plugin/chartist/chartist.min.css');*/
 
-/* Rickshaw */
+/* Rickshaw
 @import url('plugin/rickshaw/rickshaw.css');
 @import url('plugin/rickshaw/detail.css');
 @import url('plugin/rickshaw/graph.css');
-@import url('plugin/rickshaw/legend.css');
+@import url('plugin/rickshaw/legend.css');*/
 
-/* Date Range Picker */
-@import url('plugin/date-range-picker/daterangepicker-bs3.css');
+/* Date Range Picker
+@import url('plugin/date-range-picker/daterangepicker-bs3.css');*/
 
-/* Full Calendar */
-@import url('plugin/fullcalendar/fullcalendar.css');
+/* Full Calendar
+@import url('plugin/fullcalendar/fullcalendar.css');*/
+
+
