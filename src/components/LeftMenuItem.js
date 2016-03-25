@@ -2,10 +2,9 @@ import React, {PropTypes} from 'react';
 import {Link} from 'react-router';
 
 class LeftMenuItem extends React.Component {
-/*  constructor(props) {
-    super(props);
-  }*/
-
+  /*  constructor(props) {
+   super(props);
+   }*/
 
 
   render() {
