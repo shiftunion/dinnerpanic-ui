@@ -14,7 +14,7 @@ class LeftMenuItem extends React.Component {
         <Link to="/dashboard2">
           <span className="icon color5">
             <i className="fa fa-home"/>
-          </span>{this.props.displayText + this.props.key}
+          </span>{this.props.displayText + this.props.nick}
           <span className="label label-default">{this.props.count}</span>
         </Link>
       </li>
