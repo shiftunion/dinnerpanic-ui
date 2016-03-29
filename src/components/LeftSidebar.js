@@ -38,7 +38,6 @@ const lhsMenu = {
 };
 
 
-
 // Since this component is simple and static, there's no parent container for it.
 const LeftSidebar = () => {
   return (
@@ -49,11 +48,8 @@ const LeftSidebar = () => {
 
 
         {[...lhsMenu["menu"]].map((x, i) =>
-          <LeftMenuItem key={x.id} displayText={x.value} count={3}  />
+          <LeftMenuItem key={x.id} displayText={x.value} count={3}/>
         )}
-
-
-
 
 
         <li><a href="index.html"><span className="icon color5"><i className="fa fa-home"></i></span>Dashboard<span
