@@ -1,6 +1,6 @@
 import React, {PropTypes} from 'react';
-import {Link} from 'react-router';
 import LeftMenuItem from './LeftMenuItem';
+import LeftMenuItemWithSub from './LeftMenuItemWithSub';
 
 const lhsMenu = {
   "menu": [
@@ -47,9 +47,11 @@ const LeftSidebar = () => {
         <li className="sidetitle">MAIN</li>
 
 
-        {[...lhsMenu["menu"]].map((x, i) =>
-          <LeftMenuItem key={x.id} displayText={x.value} count={3} subMenuItems={x.submenu} route={x.id} />
 
+        {[...lhsMenu["menu"]].map((x, i) =>
+          x.submenu != null ?
+            <LeftMenuItemWithSub key={x.id} displayText={x.value} count={3} subMenuItems={x.submenu} /> :
+            <LeftMenuItem key={x.id} displayText={x.value} count={3} route={x.id} />
         )}
 
 
