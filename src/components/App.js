@@ -1,7 +1,7 @@
 import React, { PropTypes } from 'react';
 import { Link, IndexLink } from 'react-router';
 import TopBar from './TopBar';
-import LeftSidebar from './LeftSidebar';
+import LeftSidebar from './menu/LeftSidebar';
 import Content from './MainContent';
 import TabPanel from './TabPanel';
 

@@ -48,7 +48,8 @@ const LeftSidebar = () => {
 
 
         {[...lhsMenu["menu"]].map((x, i) =>
-          <LeftMenuItem key={x.id} displayText={x.value} count={3}/>
+          <LeftMenuItem key={x.id} displayText={x.value} count={3} subMenuItems={x.submenu} route={x.id} />
+
         )}
 
 
