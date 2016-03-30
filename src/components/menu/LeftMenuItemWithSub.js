@@ -18,7 +18,7 @@ export default class LeftMenuItemWithSub extends React.Component {
           <span className="caret"></span>
           <span className="label label-default">{this.props.count}</span>
         </Link>
-        <LeftSubMenuItem menuItems={this.props.subMenuItems.menuitem}></LeftSubMenuItem>
+        <LeftSubMenuItem menuItems={this.props.subMenuItems.menuitem}/>
       </li>
     );
   }
