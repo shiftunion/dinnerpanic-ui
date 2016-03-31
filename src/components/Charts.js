@@ -14,7 +14,7 @@ export default class Charts extends React.Component {
     return (
       <div className="content">
         <h4>
-          MEals2 are here
+          Charts are here
         </h4>
         <Link to="/"> Go back to homepage </Link>
       </div>

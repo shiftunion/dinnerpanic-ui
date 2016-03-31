@@ -2,26 +2,31 @@ import React, {PropTypes} from 'react';
 import {Link, IndexLink} from 'react-router';
 import TopBar from './TopBar';
 import LeftSidebar from './menu/LeftSidebar';
-import Content from './MainContent';
+import MainContent from './MainContent';
 import TabPanel from './TabPanel';
 import {RouteHandler} from 'react-router';
 
 
-const App = (props) => {
-  return (
-    <body>
-    <div className="loading"><img src="img/loading.gif" alt="loading-img"/></div>
-    <TopBar/>
-    <LeftSidebar/>
-    {props.children}
-    <TabPanel/>
-    </body>
-  );
-};
+class App extends React.Component {
+  render() {
+    const { content } = this.props;
+
+    return (
+      <body>
+    
+      <TopBar/>
+      <LeftSidebar/>
+      {content || <MainContent />}
+      <TabPanel/>
+      </body>
+    );
+
+  }
+}
 
 
-App.propTypes = {
+/*App.propTypes = {
   children: PropTypes.element
-};
+};*/
 
 export default App;

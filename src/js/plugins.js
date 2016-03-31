@@ -1,4 +1,5 @@
 /* Sidebar Menu*/
+/*
 $(document).ready(function () {
   $('.nav > li > a').click(function(){
     if ($(this).attr('class') != 'active'){
@@ -9,6 +10,7 @@ $(document).ready(function () {
     }
   });
 });
+*/
 
 /* Top Stats Show Hide */
 $(document).ready(function(){
@@ -43,12 +45,12 @@ $(document).ready(function(){
             $('.sidebar').removeClass('hidden');
             $('.content').css({
                 'marginLeft' : 250
-            });  
+            });
         }else{
             $('.sidebar').addClass('hidden');
             $('.content').css({
                 'marginLeft' : 0
-            });    
+            });
         }
     });
 
@@ -64,9 +66,9 @@ $(document).ready(function(){
   $(this).parents(".panel").find(".panel-body").slideToggle(100);
 
   return false;
-}); 
+});
 
- }); 
+ });
 
 /* Close */
 $(document).ready(function(){
@@ -74,9 +76,9 @@ $(document).ready(function(){
   $(this).parents(".panel").fadeToggle(400);
 
   return false;
-}); 
+});
 
- }); 
+ });
 
  /* Search */
 $(document).ready(function(){
@@ -84,9 +86,9 @@ $(document).ready(function(){
   $(this).parents(".panel").find(".panel-search").toggle(100);
 
   return false;
-}); 
+});
 
- }); 
+ });
 
 
 
@@ -102,7 +104,7 @@ $(document).ready(function(){
         else
         {
             $(this).parents(".panel").addClass('panel-fullsize');
- 
+
         }
     });
 
@@ -120,9 +122,9 @@ $(document).ready(function(){
   $(this).parents(".widget").fadeToggle(400);
 
   return false;
-}); 
+});
 
- }); 
+ });
 
 
 /* expand */
@@ -136,7 +138,7 @@ $(document).ready(function(){
         else
         {
             $(this).parents(".widget").addClass('widget-fullsize');
- 
+
         }
     });
 
@@ -149,9 +151,9 @@ $(document).ready(function(){
   $(this).parents(".kode-alert").fadeToggle(350);
 
   return false;
-}); 
+});
 
- }); 
+ });
 
 
 /* Click to close */
@@ -160,9 +162,9 @@ $(document).ready(function(){
   $(this).fadeToggle(350);
 
   return false;
-}); 
+});
 
- }); 
+ });
 
 
 
@@ -176,11 +178,13 @@ $(function () {
   $('[data-toggle="popover"]').popover()
 })
 
+/*
 
-/* Page Loading */
+/!* Page Loading *!/
 $(window).load(function() {
   $(".loading").fadeOut(750);
 })
+*/
 
 
 /* Update Fixed */
