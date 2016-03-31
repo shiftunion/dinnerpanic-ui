@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router';
 
-export default class Plans extends React.Component {
+export default class Charts extends React.Component {
   /*  constructor(props) {
    super(props);
    }*/
@@ -14,7 +14,7 @@ export default class Plans extends React.Component {
     return (
       <div className="content">
         <h4>
-          Plans are here
+          MEals2 are here
         </h4>
         <Link to="/"> Go back to homepage </Link>
       </div>
@@ -22,4 +22,4 @@ export default class Plans extends React.Component {
   }
 }
 
-export default Plans;
+export default Charts;

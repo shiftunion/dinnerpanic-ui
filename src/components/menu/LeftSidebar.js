@@ -21,7 +21,11 @@ const lhsMenu = {
     },
     {
       "id": "plans",
-      "value": "Plans",
+      "value": "Plans"
+    },
+    {
+      "id": "calendar",
+      "value": "Calendar",
       "submenu": {
         "menuitem": [
           {"value": "New", "onclick": "CreateNewDoc()"},
@@ -29,10 +33,6 @@ const lhsMenu = {
           {"value": "Close", "onclick": "CloseDoc()"}
         ]
       }
-    },
-    {
-      "id": "calendar",
-      "value": "Calendar"
     }
   ]
 };
