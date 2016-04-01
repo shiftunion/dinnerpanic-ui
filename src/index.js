@@ -12,6 +12,7 @@ import NotFoundPage from './components/NotFoundPage.js';
 import Plans from './components/Plans.js';
 import Meals from './components/Meals.js';
 import Charts from './components/Charts.js';
+import Calendar from './components/Calendar.js';
 
 
 const store = configureStore();
@@ -24,6 +25,13 @@ render(
         <Route path="meals" components={{ content: Meals }}/>
         <Route path="charts" components={{ content: Charts }}/>
         <Route path="plans" components={{ content: Plans }}/>
+        <Route path="calendar" components={{ content: Calendar }}>
+          <IndexRoute component={Calendar} />
+          <Route path="today" component={Calendar} />
+          <Route path="weekly" component={Calendar} />
+          <Route path="monthly" component={Calendar} />
+        </Route>
+
       </Route>
     </Router>
   </Provider>, document.getElementById('app')
