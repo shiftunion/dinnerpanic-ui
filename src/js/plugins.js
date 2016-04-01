@@ -1,5 +1,4 @@
 /* Sidebar Menu*/
-/*
 $(document).ready(function () {
   $('.nav > li > a').click(function(){
     if ($(this).attr('class') != 'active'){
@@ -10,7 +9,6 @@ $(document).ready(function () {
     }
   });
 });
-*/
 
 /* Top Stats Show Hide */
 $(document).ready(function(){
@@ -178,15 +176,13 @@ $(function () {
   $('[data-toggle="popover"]').popover()
 })
 
-/*
 
-/!* Page Loading *!/
+/* Page Loading */
 $(window).load(function() {
   $(".loading").fadeOut(750);
 })
-*/
 
 
 /* Update Fixed */
 /* Version 1.2 */
-/*$('.profilebox').on('click',function(){ $(".sidepanel").hide(); })*/
+$('.profilebox').on('click',function(){ $(".sidepanel").hide(); })

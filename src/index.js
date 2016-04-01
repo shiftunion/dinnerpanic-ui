@@ -19,7 +19,7 @@ const store = configureStore();
 render(
   <Provider store={store}>
     <Router history={browserHistory}>
-      <Route path="/" component={App} key="3">
+      <Route path="/" component={App}>
 
         <Route path="meals" components={{ content: Meals }}/>
         <Route path="charts" components={{ content: Charts }}/>
