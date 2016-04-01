@@ -12,11 +12,11 @@ class App extends React.Component {
     const { content } = this.props;
 
     return (
-      <body>
+      <body key="2">
 
-      <TopBar/>
-      <LeftSidebar/>
-      {content || <MainContent />}
+        <TopBar/>
+        <LeftSidebar />
+        {content || <MainContent />}
       <TabPanel/>
       </body>
     );
