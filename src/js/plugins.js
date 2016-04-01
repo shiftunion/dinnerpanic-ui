@@ -189,4 +189,4 @@ $(window).load(function() {
 
 /* Update Fixed */
 /* Version 1.2 */
-$('.profilebox').on('click',function(){ $(".sidepanel").hide(); })
+/*$('.profilebox').on('click',function(){ $(".sidepanel").hide(); })*/

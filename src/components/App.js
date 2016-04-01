@@ -13,7 +13,7 @@ class App extends React.Component {
 
     return (
       <body>
-    
+
       <TopBar/>
       <LeftSidebar/>
       {content || <MainContent />}
@@ -25,8 +25,8 @@ class App extends React.Component {
 }
 
 
-/*App.propTypes = {
+App.propTypes = {
   children: PropTypes.element
-};*/
+};
 
 export default App;
