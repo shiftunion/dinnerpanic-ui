@@ -22,17 +22,18 @@ render(
     <Router history={browserHistory}>
       <Route path="/" component={App}>
 
+
         <Route path="meals" components={{ content: Meals }}/>
         <Route path="charts" components={{ content: Charts }}/>
         <Route path="plans" components={{ content: Plans }}/>
-        <Route path="calendar" components={{ content: Calendar }}>
-          <IndexRoute component={Calendar} />
-          <Route path="today" component={Calendar} />
-          <Route path="weekly" component={Calendar} />
-          <Route path="monthly" component={Calendar} />
-        </Route>
+        <Route path="calendar/:timePeriod" components={{ content: Calendar }}>
 
+        </Route>
       </Route>
     </Router>
   </Provider>, document.getElementById('app')
 );
+
+
+/*        <Route path="category/:category" components={{ content: Category, sidebar: CategorySidebar }}>
+ <Route path=":item" component={Item} />*/

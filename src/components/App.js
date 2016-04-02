@@ -9,7 +9,7 @@ import {RouteHandler} from 'react-router';
 
 class App extends React.Component {
   render() {
-    const { content } = this.props;
+    const { content, sidebar } = this.props;
 
     return (
 

@@ -1,5 +1,5 @@
 /* Sidebar Menu*/
-$(document).ready(function () {
+/*$(document).ready(function () {
   $('.nav > li > a').click(function(){
     if ($(this).attr('class') != 'active'){
       $('.nav li ul').slideUp();
@@ -8,7 +8,7 @@ $(document).ready(function () {
       $(this).addClass('active');
     }
   });
-});
+});*/
 
 /* Top Stats Show Hide */
 $(document).ready(function(){

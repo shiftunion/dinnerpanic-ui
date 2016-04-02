@@ -1,6 +1,7 @@
 import React, {PropTypes} from 'react';
 import {Link} from 'react-router';
 
+const ACTIVE = { color: 'white' }
 
 export default class LeftMenuItem extends React.Component {
   /*  constructor(props) {
@@ -11,11 +12,13 @@ export default class LeftMenuItem extends React.Component {
   render() {
     return (
       <li>
-        <Link to={"/" + this.props.route}>
-              <span className="icon color5">
-                <i className="fa fa-home"/>
-              </span>{this.props.displayText}
-          <span className="label label-default">{this.props.count}</span>
+        <Link to={"/" + this.props.route} activeStyle={ACTIVE}>
+          <span className="icon color5">
+            <i className="fa fa-home"/>
+          </span>{this.props.displayText}
+          {this.props.count > 0
+            ? <span className="label label-default">{this.props.count}</span>
+            : null}
         </Link>
       </li>
     );
