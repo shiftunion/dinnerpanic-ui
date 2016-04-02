@@ -18,7 +18,7 @@ onClick() {
   render() {
     return (
       <li>
-        <Link to={'/calendar'} onClick={this.onClick}>
+        <a href='#' onClick={this.onClick}>
           <span className="icon color5">
             <i className="fa fa-home"/>
           </span>{this.props.displayText}
@@ -26,7 +26,7 @@ onClick() {
           {this.props.count > 0
             ? <span className="label label-default">{this.props.count}</span>
             : null}
-        </Link>
+        </a>
         {this.state.showSubMenu ?
           <LeftSubMenuItem parentRoute={this.props.route} menuItems={this.props.subMenuItems.menuitem}/> : null}
       </li>
