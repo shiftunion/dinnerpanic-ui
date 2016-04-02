@@ -2,14 +2,11 @@ import React, {PropTypes} from 'react';
 import {Link} from 'react-router';
 import LeftSubMenuItem from './LeftSubMenuItem';
 
-const ACTIVE = { color: 'white' }
-
 
 export default class LeftMenuItemWithSub extends React.Component {
   /*  constructor(props) {
    super(props);
    }*/
-
 
   render() {
     return (

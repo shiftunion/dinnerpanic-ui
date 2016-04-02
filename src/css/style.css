@@ -512,7 +512,7 @@ b,strong {
 }
 
 .sidebar-panel li ul {
-  display: none;
+  /*display: none;*/
   padding: 0;
   background: rgba(0,0,0,0.1);
   border-bottom: 1px solid rgba(0,0,0,0.1);
