@@ -21,14 +21,10 @@ render(
   <Provider store={store}>
     <Router history={browserHistory}>
       <Route path="/" component={App}>
-
-
         <Route path="meals" components={{ content: Meals }}/>
         <Route path="charts" components={{ content: Charts }}/>
         <Route path="plans" components={{ content: Plans }}/>
-        <Route path="calendar/:timePeriod" components={{ content: Calendar }}>
-
-        </Route>
+        <Route path="calendar/:timePeriod" components={{ content: Calendar }}/>
       </Route>
     </Router>
   </Provider>, document.getElementById('app')
