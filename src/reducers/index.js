@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux';
-import fuelSavingsAppState from './fuelSavings';
+import mealsAppSate from './meals';
 
 const rootReducer = combineReducers({
-  fuelSavingsAppState
+  mealsAppSate
 });
 
 export default rootReducer;
