@@ -1,3 +1,4 @@
+const initState =
 {
   "Meals": [
     {
@@ -22,7 +23,7 @@
     },
     {
       "id": "snapper",
-      "value": "Sanpper"
+      "value": "Snapper"
     },
     {
       "id": "dog-food",
@@ -67,4 +68,6 @@
       ]
     }
   ]
-}
+};
+
+export default initState

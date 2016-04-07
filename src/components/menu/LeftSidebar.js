@@ -31,7 +31,6 @@ const lhsMenu = {
 };
 
 
-// Since this component is simple and static, there's no parent container for it.
 const LeftSidebar = () => {
   return (
     <div className="sidebar clearfix">
