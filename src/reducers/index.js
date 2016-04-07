@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux';
-import mealsAppSate from './meals';
+import mealsAppState from './meals';
 
 const rootReducer = combineReducers({
-  mealsAppSate
+  mealsAppState
 });
 
 export default rootReducer;

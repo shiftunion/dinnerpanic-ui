@@ -1,6 +1,6 @@
 const initState =
 {
-  "Meals": [
+  "meals": [
     {
       "id": "pizza",
       "value": "Pizza"
