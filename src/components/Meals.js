@@ -3,10 +3,6 @@ import {Link} from 'react-router'
 import {connect} from 'react-redux'
 import {addMeal} from '../actions/actions'
 
-
-
-
-
   let Meals = ({ dispatch }) => {
     let input;
 

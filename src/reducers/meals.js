@@ -1,24 +1,29 @@
 import startState  from '../store/initialState';
+import objectAssign from 'object-assign';
 
 
 const meals = (state = startState, action) => {
   switch (action.type) {
     case 'ADD_MEAL':
-      return [
-        ...state,
+    {
+      let newState = objectAssign({}, state);
+      newState.meals = [...newState.meals,
         {
           id: action.id,
-          text: action.text,
-          completed: false
-        }
-      ];
+          value: action.meal
+        }];
+
+      return newState;
+    }
+
+
     case 'TOGGLE_TODO':
-      return state.map(t =>
-      {}
+      return state.map(t => {
+        }
       );
     default:
-      return state
+      return state;
   }
-}
+};
 
-export default meals
+export default meals;

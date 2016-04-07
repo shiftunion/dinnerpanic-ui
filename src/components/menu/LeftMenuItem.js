@@ -1,7 +1,7 @@
 import React, {PropTypes} from 'react';
 import {Link} from 'react-router';
 
-const ACTIVE = { color: 'white' }
+const ACTIVE = { color: 'white' };
 
 export default class LeftMenuItem extends React.Component {
   /*  constructor(props) {
