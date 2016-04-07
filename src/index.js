@@ -10,7 +10,7 @@ import App from './components/App';
 import AboutPage from './components/AboutPage.js';
 import NotFoundPage from './components/NotFoundPage.js';
 import Plans from './components/Plans.js';
-import Meals from './components/Meals.js';
+import Meals from './containers/Meals.js';
 import Charts from './components/Charts.js';
 import Calendar from './components/Calendar.js';
 
