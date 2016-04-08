@@ -96,7 +96,19 @@ export const lhsMenuInitState = {
         ]
       }
     }
-  ]
+    /*{
+      "id": "dude",
+      "value": "Dude",
+      "submenu": {
+        "visible" : false,
+        "menuitem": [
+          {"value": "Kats", "id": "kats"},
+          {"value": "Dogs", "id": "dogs"}
+        ]
+      }
+    }*/
+  ],
+  "selectedMenuId" : "meals"
 };
 
 

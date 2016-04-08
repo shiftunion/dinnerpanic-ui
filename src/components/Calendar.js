@@ -7,7 +7,7 @@ export default class Calendar extends React.Component {
    }*/
 
   static propTypes = {
-    params: PropTypes.array.isRequired
+    params: PropTypes.object.isRequired
   };
 
   render() {

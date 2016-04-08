@@ -19,16 +19,20 @@ class LeftSidebar extends React.Component {
 
           {[...lhsMenu["menu"]].map((x, i) =>
             x.submenu != null ?
-              <LeftMenuItemWithSub toogleMenuVisibility={this.props.actions.toogleMenuVisibility}
+              <LeftMenuItemWithSub toggleMenuVisibility={this.props.actions.toggleMenuVisibility}
+                                   selectMenuItem={this.props.actions.selectMenuItem}
                                    key={x.id}
                                    displayText={x.value}
                                    count={3}
                                    route={x.id}
-                                   subMenuItems={x.submenu}/> :
-              <LeftMenuItem key={x.id}
+                                   subMenuItems={x.submenu}
+                                   selectedMenuId={this.props.menu.selectedMenuId}/> :
+              <LeftMenuItem selectMenuItem={this.props.actions.selectMenuItem}
+                            key={x.id}
                             displayText={x.value}
                             count={3}
-                            route={x.id}/>
+                            route={x.id}
+                            isSelected={this.props.menu.selectedMenuId === x.id}/>
           )}
 
         </ul>
@@ -49,5 +53,11 @@ function mapDispatchToProps(dispatch) {
     actions: bindActionCreators(actions, dispatch)
   };
 }
+
+// Some validation of properties
+LeftSidebar.propTypes = {
+  menu: React.PropTypes.object.isRequired,
+  actions: React.PropTypes.func.isRequired
+};
 
 export default connect(mapStateToProps, mapDispatchToProps)(LeftSidebar);

@@ -22,10 +22,17 @@ export const modifyMeal = (meal) => {
   };
 };
 
-export const toogleMenuVisibility = (menuId) => {
+export const toggleMenuVisibility = (menuId) => {
   return {
     type: 'TOGGLE_SUBMENU_VISIBILITY',
     menuId
   };
 };
 
+
+export const selectMenuItem = (menuId) => {
+  return {
+    type: 'SELECT_MENU_ITEM',
+    menuId
+  };
+};

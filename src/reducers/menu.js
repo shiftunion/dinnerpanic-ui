@@ -11,6 +11,12 @@ const menu = (state = lhsMenuInitState, action) => {
       subMenu.visible = !subMenu.visible;
       return newState;
     }
+    case 'SELECT_MENU_ITEM':
+    {
+      let newState = objectAssign({}, state);
+      newState.selectedMenuId = action.menuId;
+      return newState;
+    }
 
     default:
       return state;

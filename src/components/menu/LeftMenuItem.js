@@ -1,18 +1,14 @@
 import React, {PropTypes} from 'react';
 import {Link} from 'react-router';
 
-const ACTIVE = { color: 'white' };
-
 export default class LeftMenuItem extends React.Component {
-  /*  constructor(props) {
-   super(props);
-   }*/
-
 
   render() {
     return (
       <li>
-        <Link to={"/" + this.props.route} activeStyle={ACTIVE}>
+        <Link to={"/" + this.props.route}
+              style={this.props.isSelected ? {color: 'white'} : null}
+              onClick={e => this.props.selectMenuItem(this.props.route)}>
           <span className="icon color5">
             <i className="fa fa-home"/>
           </span>{this.props.displayText}
@@ -29,7 +25,9 @@ export default class LeftMenuItem extends React.Component {
 LeftMenuItem.propTypes = {
   displayText: React.PropTypes.string.isRequired,
   count: React.PropTypes.number.isRequired,
-  route: React.PropTypes.string.isRequired
+  route: React.PropTypes.string.isRequired,
+  isSelected: React.PropTypes.bool,
+  selectMenuItem: React.PropTypes.func
 };
 
 
