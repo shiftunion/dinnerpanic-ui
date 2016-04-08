@@ -1,8 +1,8 @@
-import startState  from '../store/initialState';
+import {initState}  from '../store/initialState';
 import objectAssign from 'object-assign';
 
 
-const meals = (state = startState, action) => {
+const meals = (state = initState, action) => {
   switch (action.type) {
     case 'ADD_MEAL':
     {
@@ -15,7 +15,7 @@ const meals = (state = startState, action) => {
 
       return newState;
     }
-          
+
     case 'TOGGLE_TODO':
       return state.map(t => {
         }

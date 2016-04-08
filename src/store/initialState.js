@@ -1,4 +1,4 @@
-const initState =
+export const initState =
 {
   "meals": [
     {
@@ -70,4 +70,37 @@ const initState =
   ]
 };
 
-export default initState;
+export const lhsMenuInitState = {
+  "menu": [
+    {
+      "id": "meals",
+      "value": "Meals"
+    },
+    {
+      "id": "charts",
+      "value": "Charts"
+    },
+    {
+      "id": "plans",
+      "value": "Plans"
+    },
+    {
+      "id": "calendar",
+      "value": "Calendar",
+      "submenu": {
+        "visible" : false,
+        "menuitem": [
+          {"value": "Today", "id": "today"},
+          {"value": "Weekly", "id": "weekly"},
+          {"value": "Monthly", "id": "monthly"}
+        ]
+      }
+    }
+  ]
+};
+
+
+
+
+
+

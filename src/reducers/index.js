@@ -1,8 +1,10 @@
-import { combineReducers } from 'redux';
+import {combineReducers} from 'redux';
 import mealsAppState from './meals';
+import menuAppState from './menu';
 
 const rootReducer = combineReducers({
-  mealsAppState
+  mealsAppState,
+  menuAppState
 });
 
 export default rootReducer;

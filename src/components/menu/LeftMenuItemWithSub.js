@@ -1,24 +1,13 @@
 import React, {PropTypes} from 'react';
-import {Link} from 'react-router';
 import LeftSubMenuItem from './LeftSubMenuItem';
 
 
 export default class LeftMenuItemWithSub extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {showSubMenu: false};
-    this.onClick = this.onClick.bind(this);
-  }
-
-onClick() {
-    this.setState({showSubMenu: !this.state.showSubMenu});
-
-  }
 
   render() {
     return (
       <li>
-        <a href="#" onClick={this.onClick}>
+        <a href="#" onClick={e => this.props.toogleMenuVisibility(this.props.route)}>
           <span className="icon color5">
             <i className="fa fa-home"/>
           </span>{this.props.displayText}
@@ -27,7 +16,7 @@ onClick() {
             ? <span className="label label-default">{this.props.count}</span>
             : null}
         </a>
-        {this.state.showSubMenu ?
+        {this.props.subMenuItems.visible ?
           <LeftSubMenuItem parentRoute={this.props.route} menuItems={this.props.subMenuItems.menuitem}/> : null}
       </li>
     );

@@ -21,3 +21,11 @@ export const modifyMeal = (meal) => {
     meal
   };
 };
+
+export const toogleMenuVisibility = (menuId) => {
+  return {
+    type: 'TOGGLE_SUBMENU_VISIBILITY',
+    menuId
+  };
+};
+
