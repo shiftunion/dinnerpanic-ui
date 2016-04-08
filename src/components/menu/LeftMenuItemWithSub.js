@@ -7,7 +7,7 @@ export default class LeftMenuItemWithSub extends React.Component {
   constructor(props) {
     super(props);
     this.state = {showSubMenu: false};
-    this.onClick = this.onClick.bind(this)
+    this.onClick = this.onClick.bind(this);
   }
 
 onClick() {
@@ -18,7 +18,7 @@ onClick() {
   render() {
     return (
       <li>
-        <a href='#' onClick={this.onClick}>
+        <a href="#" onClick={this.onClick}>
           <span className="icon color5">
             <i className="fa fa-home"/>
           </span>{this.props.displayText}

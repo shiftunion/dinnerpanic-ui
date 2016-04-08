@@ -6,9 +6,9 @@ export default class Charts extends React.Component {
    super(props);
    }*/
 
-  componentDidMount() {
+/*  componentDidMount() {
     console.log('im here');
-  }
+  }*/
 
   render() {
     return (

@@ -2,13 +2,6 @@ import React from 'react';
 import {Link} from 'react-router';
 
 export default class Plans extends React.Component {
-  /*  constructor(props) {
-   super(props);
-   }*/
-
-  componentDidMount() {
-    console.log('im here');
-  }
 
   render() {
     return (

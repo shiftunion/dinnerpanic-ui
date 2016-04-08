@@ -8,11 +8,11 @@ const MealList = ({ meals }) => (
       <li key={x.id}>{x.value}</li>
     )}
   </ul>
-)
+);
 
 
 /*class MealList extends React.Component {
-  
+
   render() {
     return (
       <ul>

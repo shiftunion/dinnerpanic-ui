@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Component, PropTypes} from 'react';
 import {Link} from 'react-router';
 
 export default class Calendar extends React.Component {
@@ -6,7 +6,9 @@ export default class Calendar extends React.Component {
    super(props);
    }*/
 
-
+  static propTypes = {
+    params: PropTypes.array.isRequired
+  };
 
   render() {
     const timePeriod  = this.props.params.timePeriod;
@@ -25,4 +27,4 @@ export default class Calendar extends React.Component {
   }
 }
 
-export default Calendar
+export default Calendar;

@@ -1,8 +1,7 @@
-'use strict'
+'use strict';
 
-import React from 'react';
-import {connect} from 'react-redux'
-import {addMeal} from '../actions/actions'
+import React, {Component, PropTypes} from 'react';
+
 
 
 class MealAdd extends React.Component {
@@ -14,12 +13,12 @@ class MealAdd extends React.Component {
       <form onSubmit={e => {
         e.preventDefault();
         if (!input.value.trim()) {
-          return
+          return;
         }
-        this.props.dispatch(addMeal(input.value));
-        input.value = ''
+        this.props.addMeal(input.value);
+        input.value = '';
       }}>
-        <input ref={node => {input = node}}/>
+        <input ref={node => {input = node;}}/>
         <button type="submit">
           Add Meal
         </button>
@@ -28,8 +27,12 @@ class MealAdd extends React.Component {
   }
 }
 
+MealAdd.propTypes = {
+  addMeal: PropTypes.func.isRequired
+};
 
-export default connect()(MealAdd);
+
+export default MealAdd;
 
 
 

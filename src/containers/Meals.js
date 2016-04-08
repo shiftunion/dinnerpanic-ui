@@ -1,11 +1,11 @@
-'use strict'
+'use strict';
 
 import React, {Component, PropTypes} from 'react';
-import {connect} from 'react-redux'
-import * as actions from '../actions/actions'
+import {connect} from 'react-redux';
+import * as actions from '../actions/actions';
 import {bindActionCreators} from 'redux';
-import MealList from './../components/MealList'
-import MealAdd from './../components/MealAdd'
+import MealList from './../components/MealList';
+import MealAdd from './../components/MealAdd';
 
 
 class Meals extends React.Component {
@@ -14,32 +14,30 @@ class Meals extends React.Component {
     actions: PropTypes.object.isRequired
   };
 
-
   render() {
 
     return (
       <div className="content">
-        <MealAdd/>
-        <MealList meals={this.props.meals} addMeal={this.props.actions.addMeal} />
+        <MealAdd addMeal={this.props.actions.addMeal}/>
+        <MealList meals={this.props.meals}/>
       </div>
     );
   }
 }
 
-/* Magic functions */
+/* Magic function 1 */
 const mapStateToProps = (state) => {
   return {meals: state.mealsAppState.meals};
-}
+};
 
+/* Magic function 2 */
 function mapDispatchToProps(dispatch) {
   return {
     actions: bindActionCreators(actions, dispatch)
   };
 }
 
-
-
-export default connect(mapStateToProps, mapDispatchToProps)(Meals)
+export default connect(mapStateToProps, mapDispatchToProps)(Meals);
 
 
 
