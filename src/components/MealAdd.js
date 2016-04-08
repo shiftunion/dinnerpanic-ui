@@ -3,7 +3,6 @@
 import React from 'react';
 import {connect} from 'react-redux'
 import {addMeal} from '../actions/actions'
-import MealList from './MealList'
 
 
 class MealAdd extends React.Component {

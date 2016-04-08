@@ -1,46 +1,45 @@
 'use strict'
 
-import React from 'react';
-import {Link} from 'react-router'
+import React, {Component, PropTypes} from 'react';
 import {connect} from 'react-redux'
-import {addMeal} from '../actions/actions'
-import {createStore} from 'redux'
+import * as actions from '../actions/actions'
+import {bindActionCreators} from 'redux';
 import MealList from './../components/MealList'
 import MealAdd from './../components/MealAdd'
 
 
 class Meals extends React.Component {
-  render() {
+  static propTypes = {
+    meals: PropTypes.array.isRequired,
+    actions: PropTypes.object.isRequired
+  };
 
-    let input;
+
+  render() {
 
     return (
       <div className="content">
-          <MealAdd/>
-          <MealList/>
+        <MealAdd/>
+        <MealList meals={this.props.meals} addMeal={this.props.actions.addMeal} />
       </div>
     );
   }
 }
 
-/* Magic function */
+/* Magic functions */
 const mapStateToProps = (state) => {
-  return {meals: state.mealAppState};
+  return {meals: state.mealsAppState.meals};
 }
 
-const mapDispatchToProps = (dispatch) => {
+function mapDispatchToProps(dispatch) {
   return {
-    onTodoClick: (id) => {
-      dispatch(toggleTodo(id))
-    }
-  }
+    actions: bindActionCreators(actions, dispatch)
+  };
 }
 
 
 
-let Dude = connect(mapStateToProps, mapDispatchToProps)(MealList);
-
-export default Dude;
+export default connect(mapStateToProps, mapDispatchToProps)(Meals)
 
 
 

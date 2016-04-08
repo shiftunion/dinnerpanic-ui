@@ -15,8 +15,7 @@ const meals = (state = startState, action) => {
 
       return newState;
     }
-
-
+          
     case 'TOGGLE_TODO':
       return state.map(t => {
         }
