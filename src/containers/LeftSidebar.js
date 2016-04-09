@@ -39,7 +39,6 @@ class LeftSidebar extends React.Component {
       </div>
     );
   }
-
 }
 
 /* Magic function 1 */
