@@ -1,9 +1,9 @@
-import React, {PropTypes} from 'react';
-import TopBar from './TopBar';
-import LeftSidebar from './../containers/LeftSidebar';
-import MainContent from './MainContent';
-import TabPanel from './TabPanel';
-import {RouteHandler} from 'react-router';
+import React, {PropTypes} from "react";
+import TopBar from "./TopBar";
+import LeftSidebar from "./../containers/LeftSidebar";
+import MainContent from "./MainContent";
+import TabPanel from "./TabPanel";
+import {RouteHandler} from "react-router";
 
 
 class App extends React.Component {
