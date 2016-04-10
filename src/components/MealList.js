@@ -1,8 +1,6 @@
-import React, {PropTypes} from 'react';
+import React, {PropTypes} from "react";
 
-
-
-const MealList = ({ meals }) => (
+const MealList = ({meals}) => (
   <ul>
     {meals.map((x, i) =>
       <li key={x.id}>{x.value}</li>
@@ -13,17 +11,17 @@ const MealList = ({ meals }) => (
 
 /*class MealList extends React.Component {
 
-  render() {
-    return (
-      <ul>
-        {this.props.meals.map((x, i) =>
-          <li key={x.id}>{x.value}</li>
-        )}
-      </ul>
+ render() {
+ return (
+ <ul>
+ {this.props.meals.map((x, i) =>
+ <li key={x.id}>{x.value}</li>
+ )}
+ </ul>
 
-    );
-  }
-}*/
+ );
+ }
+ }*/
 
 // Some validation of properties
 MealList.propTypes = {
