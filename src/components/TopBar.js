@@ -1,5 +1,4 @@
-import React, { PropTypes } from 'react';
-import { Link } from 'react-router';
+import React, {PropTypes} from "react";
 
 // Since this component is simple and static, there's no parent container for it.
 const TopBar = () => {
@@ -47,7 +46,8 @@ const TopBar = () => {
       <ul className="top-right">
 
         <li className="dropdown link">
-          <a href="#" data-toggle="dropdown" className="dropdown-toggle hdbutton">Create New <span className="caret"></span></a>
+          <a href="#" data-toggle="dropdown" className="dropdown-toggle hdbutton">Create New <span
+            className="caret"></span></a>
           <ul className="dropdown-menu dropdown-menu-list">
             <li><a href="#"><i className="fa falist fa-paper-plane-o"></i>Product or Item</a></li>
             <li><a href="#"><i className="fa falist fa-font"></i>Blog Post</a></li>
@@ -62,12 +62,13 @@ const TopBar = () => {
 
         <li className="dropdown link">
           <a href="#" data-toggle="dropdown" className="dropdown-toggle profilebox"><img src="img/profileimg.png"
-                                                                                     alt="img"/><b>Jonathan Doe</b>
+                                                                                         alt="img"/><b>Jonathan Doe</b>
             <span className="caret">&nbsp;</span>
           </a>
           <ul className="dropdown-menu dropdown-menu-list dropdown-menu-right">
             <li role="presentation" className="dropdown-header">Profile</li>
-            <li><a href="#"><i className="fa falist fa-inbox"></i>Inbox<span className="badge label-danger">4</span></a></li>
+            <li><a href="#"><i className="fa falist fa-inbox"></i>Inbox<span className="badge label-danger">4</span></a>
+            </li>
             <li><a href="#"><i className="fa falist fa-file-o"></i>Files</a></li>
             <li><a href="#"><i className="fa falist fa-wrench"></i>Settings</a></li>
             <li className="divider"></li>

@@ -1,5 +1,5 @@
-import React, {Component, PropTypes} from 'react';
-import {Link} from 'react-router';
+import React, {Component, PropTypes} from "react";
+import {Link} from "react-router";
 
 export default class Calendar extends React.Component {
   /*  constructor(props) {
@@ -11,7 +11,7 @@ export default class Calendar extends React.Component {
   };
 
   render() {
-    const timePeriod  = this.props.params.timePeriod;
+    const timePeriod = this.props.params.timePeriod;
     return (
       <div className="content">
         <h4>
