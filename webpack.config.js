@@ -1,9 +1,9 @@
 // For info about this file refer to webpack and webpack-hot-middleware documentation
 // Rather than having hard coded webpack.config.js for each environment, this
 // file generates a webpack config for the environment passed to the getConfig method.
-import webpack from 'webpack';
-import path from 'path';
-import ExtractTextPlugin from 'extract-text-webpack-plugin';
+import webpack from "webpack";
+import path from "path";
+import ExtractTextPlugin from "extract-text-webpack-plugin";
 
 const developmentEnvironment = 'development';
 const productionEnvironment = 'production';
